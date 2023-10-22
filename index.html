@@ -2,26 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Haptic Interface</title>
+    <title>Image and Buttons</title>
     <style>
-        /* CSS to make the image adaptive */
+        /* CSS to make the images adaptive */
         img {
             max-width: 70%; /* Sets the maximum width to 60% of the viewport */
             height: auto;  /* Allows the height to adjust automatically */
         }
-
-        /* CSS to center the image */
+        
+        /* CSS to center the content */
         body {
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* 100% of the viewport height */
+            text-align: center; /* Centers inline and inline-block elements */
+        }
+        
+        .button-container {
+            display: inline-block; /* Makes the container inline-level */
+        }
+
+        /* Style individual buttons */
+        .button {
+            margin: 10px; /* Adds space around each button */
         }
     </style>
 </head>
 <body>
+    <!-- Main image -->
     <img src="Website-01.jpg" alt="My Image">
+    
+    <!-- Button images -->
+    <div class="button-container">
+        <img src="Button 01.jpg" alt="Button 01" class="button">
+        <img src="Button 02.jpg" alt="Button 02" class="button">
+    </div>
 </body>
 </html>
