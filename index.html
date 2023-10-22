@@ -1,31 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Website with Buttons</title>
-  <style>
-    #container {
-      text-align: center;
-    }
+    <meta charset="UTF-8">
+    <title>Image and Buttons</title>
+    <style>
+        /* CSS for image container */
+        .image-container {
+            width: 85%;
+            margin: auto;
+        }
+        
+        /* CSS for the main image */
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
 
-    #img-website {
-      width: 85%;
-    }
+        /* CSS for the button container */
+        .button-container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
 
-    .button-image {
-      cursor: pointer;
-      width: 20%;
-    }
-  </style>
+        /* Style individual buttons */
+        .button {
+            width: calc(50% - 20px);  /* Subtract more space for margin */
+            height: auto;
+            margin: 10px;  /* Add margin to create space around the buttons */
+        }
+    </style>
 </head>
-
 <body>
-  <div id="container">
-    <img id="img-website" src="Website-01.jpg" alt="Main Website Image">
-    <img class="button-image" src="Button 01.jpg" alt="Button 01" id="button01">
-    <img class="button-image" src="Button 02.jpg" alt="Button 02" id="button02">
-  </div>
 
+    <div class="image-container">
+        <img src="Website-01.jpg" alt="My Image">
+    </div>
+
+    <!-- Button images -->
+    <div class="button-container">
+        <img src="Button 01.jpg" alt="Button 01" class="button">
+        <img src="Button 02.jpg" alt="Button 02" class="button">
+    </div>
+
+  
   <script>
     // Bluetooth related variables
     var bluetoothDevice;
