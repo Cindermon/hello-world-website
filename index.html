@@ -17,6 +17,24 @@
       width: 20%;
       margin: 0 10px;  /* Adds 10 pixels of margin to the left and right */
     }
+  
+  #grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  margin: auto;
+  gap: 10px;
+}
+
+.grid-item {
+  width: 100%;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+    
   </style>
 </head>
 
@@ -25,7 +43,18 @@
     <img id="img-website" src="Website-01.jpg" alt="Main Website Image">
     <img class="button-image" src="Button 01.jpg" alt="Button 01" id="button01">
     <img class="button-image" src="Button 02.jpg" alt="Button 02" id="button02">
-  </div>
+    <div id="grid-container">
+  <img src="W1.jpg" class="grid-item" id="w1">
+  <img src="W2.jpg" class="grid-item clickable" id="w2">
+  <img src="W3.jpg" class="grid-item" id="w3">
+  <img src="W4.jpg" class="grid-item clickable" id="w4">
+  <img src="W5.jpg" class="grid-item clickable" id="w5">
+  <img src="W6.jpg" class="grid-item clickable" id="w6">
+  <img src="W7.jpg" class="grid-item" id="w7">
+  <img src="W8.jpg" class="grid-item clickable" id="w8">
+  <img src="W9.jpg" class="grid-item" id="w9">
+</div>
+</div>
 
   <script>
     // Bluetooth related variables
@@ -57,6 +86,14 @@
     document.getElementById("button02").addEventListener("click", function () {
       // Action for Button 02 (currently empty)
     });
+
+
+    document.querySelectorAll('.clickable').forEach(item => {
+  item.addEventListener('click', event => {
+    // Perform some action, for demonstration purposes I'm just logging the ID
+    console.log(event.target.id);
+  });
+});
   </script>
 
 </body>
