@@ -6,7 +6,7 @@
     <style>
         /* CSS for image container */
         .image-container {
-            width: 80%;
+            width: 60%;
             margin: auto;
         }
         
@@ -20,31 +20,31 @@
 
         /* CSS for the button container */
         .button-container {
-            width: 100%;  
+            width: 80%;
+            margin: auto;
             display: flex;
             justify-content: space-between;
-            margin: auto;
         }
 
         /* Style individual buttons */
         .button {
-            width: calc(50% - 10px);
+            width: calc(50% - 20px);  /* Subtract more space for margin */
             height: auto;
+            margin: 10px;  /* Add margin to create space around the buttons */
         }
     </style>
 </head>
 <body>
 
     <div class="image-container">
-        <img src="Website-01.jpg" alt="My Image">
+        <img src="my-image.jpg" alt="My Image">
     </div>
 
     <!-- Button images -->
-    <div class="image-container"> <!-- This will ensure it's the same width as the image above -->
-        <div class="button-container">
-            <img src="Button 01.jpg" alt="Button 01" class="button">
-            <img src="Button 02.jpg" alt="Button 02" class="button">
-        </div>
+    <div class="button-container">
+        <img src="button01.jpg" alt="Button 01" class="button">
+        <img src="button02.jpg" alt="Button 02" class="button">
     </div>
+
 </body>
 </html>
